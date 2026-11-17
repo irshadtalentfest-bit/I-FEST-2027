@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#042f2e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="shieldBorder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Shield -->
+  <path d="M 256 16 C 370 16, 464 64, 464 160 C 464 330, 340 440, 256 496 C 172 440, 48 330, 48 160 C 48 64, 142 16, 256 16 Z" 
+        fill="url(#bgGrad)" stroke="url(#shieldBorder)" stroke-width="8" filter="url(#goldGlow)"/>
+
+  <!-- Inner Decorative Border -->
+  <path d="M 256 36 C 352 36, 440 76, 440 165 C 440 315, 328 418, 256 470 C 184 418, 72 315, 72 165 C 72 76, 160 36, 256 36 Z" 
+        fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
+
+  <!-- Star Embellishments -->
+  <polygon points="256,60 263,78 282,80 267,93 272,112 256,101 240,112 245,93 230,80 249,78" fill="url(#goldGrad)"/>
+  <polygon points="180,95 184,106 196,107 186,115 189,127 180,120 171,127 174,115 164,107 176,106" fill="url(#goldGrad)" opacity="0.8"/>
+  <polygon points="332,95 336,106 348,107 338,115 341,127 332,120 323,127 326,115 316,107 328,106" fill="url(#goldGrad)" opacity="0.8"/>
+
+  <!-- Quill & Torch Cultural Symbol in Center -->
+  <g transform="translate(256, 175) scale(0.9)">
+    <!-- Torch Flame -->
+    <path d="M 0 -35 C 15 -15, 20 0, 0 20 C -20 0, -15 -15, 0 -35 Z" fill="#fbbf24" filter="url(#goldGlow)"/>
+    <path d="M 0 -25 C 8 -10, 10 0, 0 12 C -10 0, -8 -10, 0 -25 Z" fill="#fef08a"/>
+    <!-- Torch Base / Quill Nib -->
+    <path d="M -12 22 L 12 22 L 6 55 L -6 55 Z" fill="url(#goldGrad)"/>
+    <line x1="0" y1="22" x2="0" y2="48" stroke="#78350f" stroke-width="2"/>
+  </g>
+
+  <!-- Main Acronym: I-FEST -->
+  <text x="256" y="295" font-family="'Cinzel', Georgia, serif" font-size="82" font-weight="900" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="4" filter="url(#goldGlow)">
+    I-FEST
+  </text>
+
+  <!-- Banner Ribbon for Irshad Talent Feista -->
+  <g transform="translate(0, 315)">
+    <path d="M 80 32 L 256 12 L 432 32 L 416 68 L 256 50 L 96 68 Z" fill="#0f172a" stroke="#d97706" stroke-width="2.5"/>
+    <text x="256" y="44" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="19" font-weight="800" fill="#fef08a" text-anchor="middle" letter-spacing="2.5">
+      IRSHAD TALENT FEISTA
+    </text>
+  </g>
+
+  <!-- Edition / Year -->
+  <text x="256" y="415" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="800" fill="#38bdf8" text-anchor="middle" letter-spacing="8">
+    2027
+  </text>
+
+  <!-- Bottom Crest Motto -->
+  <text x="256" y="442" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle" letter-spacing="3">
+    EXCELLENCE · PASSION · GLORY
+  </text>
+</svg>

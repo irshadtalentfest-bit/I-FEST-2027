@@ -1,0 +1,6 @@
+{
+  "name": "I-FEST 2027",
+  "description": "Comprehensive college cultural and technical fest management platform with four-tier role access, real-time scoring, live leaderboards, time-locked rosters, and automated winner poster generator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
